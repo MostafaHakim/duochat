@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://duochat-5ugm.vercel.app/*",
+    origin: "https://duochat-5ugm.vercel.app",
     methods: ["GET", "POST"],
   },
 });
