@@ -18,7 +18,7 @@ const io = new Server(server, {
     methods: ["GET", "POST"],
   },
 });
-
+const PORT = process.env.PORT;
 app.use(cors());
 app.use(express.json());
 app.use(
