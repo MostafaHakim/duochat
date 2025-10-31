@@ -12,13 +12,14 @@ import uploadRoutes from "./routes/upload.js";
 
 const app = express();
 const server = http.createServer(app);
+const PORT = process.env.PORT || 4000;
 const io = new Server(server, {
   cors: {
-    origin: "https://duochat-5ugm.vercel.app",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
-const PORT = process.env.PORT;
+
 app.use(cors());
 app.use(express.json());
 app.use(
