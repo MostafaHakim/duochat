@@ -137,7 +137,7 @@ export default function MobileColorfulChat({ socket, user, room, setUser }) {
         <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-4 flex justify-between items-center rounded-t-3xl">
           <div className="flex flex-col overflow-hidden">
             <h1 className="text-white font-bold text-lg truncate">
-              Room: {room}
+              Room: {`202556${room}15226`}
             </h1>
             <span className="text-white text-xs opacity-80 truncate">
               User: {user}
@@ -234,7 +234,7 @@ export default function MobileColorfulChat({ socket, user, room, setUser }) {
         <div className="p-3 border-t bg-white flex items-center gap-2">
           <input
             type="text"
-            placeholder="Enter room code to decrypt"
+            placeholder="Demo"
             value={decryptCode}
             onChange={(e) => setDecryptCode(e.target.value)}
             className="flex-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 text-sm"
